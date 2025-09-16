@@ -4,6 +4,14 @@ import { ExternalLink, Github } from "lucide-react"
 
 const projects = [
   {
+    title: "SQL Article Views Analysis",
+    description:
+      "Comprehensive SQL-only data analysis project examining article views patterns, author engagement, and user behavior. Demonstrates advanced SQL skills through complex queries analyzing article popularity and identifying key insights from viewing data.",
+    technologies: ["SQL", "Database Management", "Data Analysis", "Query Optimization"],
+    githubUrl: "https://github.com/Noracs50/SQL-Article-Views-Analysis",
+    demoUrl: "https://github.com/Noracs50/SQL-Article-Views-Analysis",
+  },
+  {
     title: "Bellabeat Capstone Project",
     description:
       "Business Case Study from Google Data Analytics Certificate analyzing smart device usage patterns and user behavior to provide strategic recommendations for Bellabeat's marketing strategy.",
@@ -62,7 +70,7 @@ export function ProjectsSection() {
                   {project.technologies.map((tech, techIndex) => (
                     <span
                       key={techIndex}
-                      className="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full font-medium"
+                      className="px-3 py-1 bg-muted text-foreground text-sm rounded-full font-medium border"
                     >
                       {tech}
                     </span>
