@@ -32,8 +32,11 @@ export function ContactSection() {
   }
 
   return (
-    <section id="contact" className="py-20 bg-background">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="contact" className="py-20 bg-background relative overflow-hidden">
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_50%,rgba(99,102,241,0.04),transparent_50%)]" />
+      <div className="absolute inset-0 bg-[linear-gradient(135deg,transparent_25%,rgba(99,102,241,0.02)_50%,transparent_75%)]" />
+
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-balance">Let's Connect</h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto text-pretty">
@@ -55,7 +58,7 @@ export function ContactSection() {
             <div className="space-y-4">
               <a
                 href="mailto:noraraafat5@gmail.com"
-                className="flex items-center p-4 bg-muted/50 rounded-lg hover:bg-muted transition-colors group"
+                className="flex items-center p-4 bg-muted/50 rounded-lg hover:bg-muted transition-all duration-300 group professional-card border-2 border-border shadow-sm hover:shadow-md hover:border-accent/50"
               >
                 <Mail className="mr-3 h-5 w-5 text-primary group-hover:scale-110 transition-transform" />
                 <div>
@@ -68,7 +71,7 @@ export function ContactSection() {
                 href="https://www.linkedin.com/in/nora-raafat"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center p-4 bg-muted/50 rounded-lg hover:bg-muted transition-colors group"
+                className="flex items-center p-4 bg-muted/50 rounded-lg hover:bg-muted transition-all duration-300 group professional-card border-2 border-border shadow-sm hover:shadow-md hover:border-accent/50"
               >
                 <Linkedin className="mr-3 h-5 w-5 text-primary group-hover:scale-110 transition-transform" />
                 <div>
@@ -77,7 +80,7 @@ export function ContactSection() {
                 </div>
               </a>
 
-              <div className="flex items-center p-4 bg-muted/50 rounded-lg">
+              <div className="flex items-center p-4 bg-muted/50 rounded-lg professional-card border-2 border-border shadow-sm">
                 <Phone className="mr-3 h-5 w-5 text-primary" />
                 <div>
                   <div className="font-medium">Phone</div>
@@ -85,7 +88,7 @@ export function ContactSection() {
                 </div>
               </div>
 
-              <div className="flex items-center p-4 bg-muted/50 rounded-lg">
+              <div className="flex items-center p-4 bg-muted/50 rounded-lg professional-card border-2 border-border shadow-sm">
                 <MapPin className="mr-3 h-5 w-5 text-primary" />
                 <div>
                   <div className="font-medium">Location</div>
@@ -97,7 +100,7 @@ export function ContactSection() {
 
           {/* Contact Form */}
           <div className="lg:col-span-2">
-            <Card className="border-border">
+            <Card className="professional-card border-2 border-border shadow-lg hover:shadow-xl hover:border-accent/70">
               <CardHeader>
                 <CardTitle>Send a Message</CardTitle>
               </CardHeader>
