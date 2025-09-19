@@ -5,6 +5,7 @@ import { Database, BarChart3, Code, Lightbulb, Users, FileSpreadsheet } from "lu
 const technicalSkills = [
   { name: "SQL & Database Management", level: 90, icon: Database },
   { name: "Python (Pandas, NumPy, Matplotlib)", level: 85, icon: Code },
+  { name: "R (ggplot2, dplyr, tidyr)", level: 80, icon: Code },
   { name: "Excel (Pivot Tables, Power Query)", level: 95, icon: FileSpreadsheet },
   { name: "Tableau", level: 88, icon: BarChart3 },
   { name: "Power BI", level: 88, icon: BarChart3 },
